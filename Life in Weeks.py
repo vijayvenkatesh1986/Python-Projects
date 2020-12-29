@@ -2,12 +2,11 @@
 age = input("What is your current age?")
 
 
-months = int(age)  * 12
-weeks = int(age) * 52
-days = int(age) * 365
 
-pending_months = 1080 - months
-pending_weeks = 4680 - weeks
-pending_days = 32850 - days
+pending_age = 90 - int(age)
+pending_months = int(pending_age)  * 12
+pending_weeks = int(pending_age) * 52
+pending_days = int(pending_age) * 365
+
 
 print(f"You have {pending_days} days, {pending_weeks} weeks, {pending_months} months left")
